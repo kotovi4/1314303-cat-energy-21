@@ -1,20 +1,24 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>Главная страница | Кэт энерджи</title>
   </head>
+
   <body class="page-body">
 
-    <header class="page-header">
-      <a class="page-header-logo" href="#">
-        <img src="https://via.placeholder.com/190x38" width="190" height="38" alt="Логотип Кэт Энерджи">
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
-        <div class="main-nav__wrapper">
+    <header class="page__header">
+      <div class="page__wrapper">
+        <div class="header__logo-wrapper">
+          <a class="header__logo" href="#">
+            <img src="https://via.placeholder.com/190x38" width="190" height="38" alt="Логотип Кэт Энерджи">
+          </a>
+          <button class="main-nav__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+        </div>
+
+        <nav class="main-nav">
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--active">
               <a class="main-nav__link" href="index.html">Главная</a>
@@ -26,13 +30,15 @@
               <a class="main-nav__link" href="form.html">Подобрать программу</a>
             </li>
           </ul>
-        </div>
-      </nav>
+        </nav>
+
+      </div>
     </header>
 
     <main class="page-main">
-      <h1 class="visually-hidden">Функциональное питание для котов "Кэт Энерджи"</h1>
+
       <section class="promo">
+        <h1 class="visually-hidden">Функциональное питание для котов "Кэт Энерджи"</h1>
         <div class="promo__wrapper">
           <h2 class="promo__title">Функциональное питание для котов</h2>
           <p class="promo__slogan">Занялся собой? Займись котом!</p>
@@ -59,10 +65,22 @@
         <div class="advantages__wrapper">
           <h2 class="advantages__title">Как это работает</h2>
           <ul class="advantages__list">
-            <li class="advantages__item advantages__item--healthy">Функциональное питание содержит только полезные питательные вещества.</li>
-            <li class="advantages__item advantages__item--fast">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</li>
-            <li class="advantages__item advantages__item--replacement">Замените один-два приема обычной еды на наше функциональное питание.</li>
-            <li class="advantages__item advantages__item--change">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</li>
+            <li class="advantages__item advantages__item--healthy">
+              <img class="advantages__img" src="https://via.placeholder.com/50x50" width="50" height="50">
+              <p class="advantages__item-text">Функциональное питание содержит только полезные питательные вещества.</p>
+            </li>
+            <li class="advantages__item advantages__item--fast">
+              <img class="advantages__img" src="https://via.placeholder.com/50x50" width="50" height="50">
+              <p class="advantages__item-text">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
+            </li>
+            <li class="advantages__item advantages__item--replacement">
+              <img class="advantages__img" src="https://via.placeholder.com/50x50" width="50" height="50">
+              <p class="advantages__item-text" >Замените один-два приема обычной еды на наше функциональное питание.</p>
+            </li>
+            <li class="advantages__item advantages__item--change">
+              <img class="advantages__img" src="https://via.placeholder.com/50x50" width="50" height="50">
+              <p class="advantages__item-text">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
+            </li>
           </ul>
         </div>
       </section>
@@ -107,6 +125,7 @@
         </div>
       </section>
     </main>
+
     <footer class="page-footer">
       <a class="footer-logo" href="#">
         <img src="https://via.placeholder.com/128x24" width="128" height="24" alt="Логотип Кэт Энерджи">
@@ -129,7 +148,7 @@
         </li>
       </ul>
       <a class="developer" href="https://htmlacademy.ru/intensive/adaptive">
-        <p class="developer__name"></p>
+        <p class="developer__name">HTML Academy</p>
         <img src="https://via.placeholder.com/281x34" width="281" height="34" alt="Логотип Академии">
       </a>
     </footer>
