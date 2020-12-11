@@ -1,0 +1,46 @@
+.page-header {
+  position: relative;
+  min-height: 264px;
+  padding: 0 20px;
+
+  outline: 5px solid rgba(0, 255, 0, 0.3);
+  outline-offset: -5px;
+}
+
+.page-header__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 11px;
+  padding-bottom: 11px;
+}
+
+.page-header__toggle {
+  position: relative;
+  z-index: 7;
+  display: inline-block;
+  padding: 0;
+  width: 25px;
+  line-height: 30px;
+  margin-bottom: 6px;
+  background: transparent;
+  border: none;
+  user-select: none;
+  cursor: pointer;
+}
+
+.page-header__toggle span {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  width: 100%;
+  height: 2px;
+  font-size: 0;
+  color: transparent;
+  background: @basic-black;
+  transition: 0.3s;
+}
+
+// .page-header__toggle-close {
+
+// }
