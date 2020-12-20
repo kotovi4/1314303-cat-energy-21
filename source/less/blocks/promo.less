@@ -4,7 +4,6 @@
   background-position: center top;
   background-repeat: no-repeat;
   color: @basic-white;
-  // background-image: url("../img/index-background.jpg");
 
   &::before {
     position: absolute;
@@ -14,7 +13,7 @@
     width: 100%;
     height: 60%;
     background-blend-mode: multiply;
-    background-color: @bg-green;
+    background-color: @promo-background-color;
     z-index: 1;
   }
 }
@@ -62,11 +61,11 @@
   width: 280px;
 
   &:hover {
-    background-color: @green-hover;
+    background-color: @button-hover-color;
   }
 
   &:active {
-    background-color: @green-hover;
-    color: @white-hover;
+    background-color: @button-hover-color;
+    color: @button-text-hover-color;
   }
 }
