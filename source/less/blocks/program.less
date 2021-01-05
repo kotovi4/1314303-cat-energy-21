@@ -3,12 +3,25 @@
 // }
 
 .program__box {
-  display: inline-block;
+  // display: inline-block;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   padding: 0 20px;
   list-style: none;
+
+  @media (min-width: @desktop-width) {
+    padding: 0 110px;
+    display: grid;
+    grid-template-columns: 570px 570px;
+    grid-template-rows: auto;
+    column-gap: 80px;
+    margin-bottom: 71px;
+  }
 }
 
 .program__item {
+  padding: 20px;
   margin-bottom: 20px;
   background-color: @basic-grey;
 }
@@ -17,18 +30,42 @@
   font-size: 24px;
   line-height: 37px;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
 
 .program__specification {
+  padding-bottom: 23px;
   font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
   color: @text-basic-color;
   border-bottom: 1px solid @main-border-color;
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 24px;
+    font-size: 16px;
+    line-height: 24px;
+    color: @basic-black;
+    border: none;
+  }
 }
 
-.program_button {
+.program__button {
   font-size: 16px;
   line-height: 16px;
   color: @basic-black;
+  padding-right: 127px;
+  padding-top: 15px;
+  padding-bottom: 18px;
+  text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 24px;
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
