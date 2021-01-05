@@ -1,11 +1,34 @@
 .example {
   padding: 0 20px;
   background-color: @example-background-color;
+
+  @media (min-width: @tablet-width) {
+    background: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-color: @example-background-color;
+  }
 }
 
 .example__title {
+  margin-top: 0;
+  margin-bottom: 33px;
+  padding-top: 27px;
   font-size: 36px;
   line-height: 40px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    padding-top: 25px;
+    margin-bottom: 65px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 75px;
+    padding-top: 22px;
+  }
 }
 
 .example__specification {
@@ -13,32 +36,97 @@
   font-size: 14px;
   line-height: 18px;
   color: @text-basic-color;
+  margin: 0;
+  margin-bottom: 25px;
+  max-width: 279px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+    max-width: 700px;
+    margin-bottom: 53px;
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: 436px;
+    margin-bottom: 68px;
+  }
 }
 
-// .example__list {
+.example__list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  margin-bottom: 34px;
 
-// }
+  @media (min-width: @tablet-width) {
+    width: 366px;
+  }
 
-// .example__item {
+  @media (min-width: @desktop-width) {
+    margin-bottom: 55px;
+  }
+}
 
-// }
+.example__item {
+  position: relative;
+}
 
 .example__number {
   font-size: 24px;
   line-height: 24px;
+  text-align: center;
+  width: 124px;
+  height: 56px;
+  padding-top: 14px;
+  border: 1px solid @example-border-color;
+  box-sizing: border-box;
+  border-radius: 3px;
+  order: 2;
+
+  @media (min-width: @tablet-width) {
+    font-size: 30px;
+    line-height: 37px;
+    width: 162px;
+    height: 72px;
+  }
 }
 
 .example__text {
-  font-family: "Arial", sans-serif;
+  position: absolute;
+  top: 45px;
+  left: 50%;
   font-size: 12px;
   line-height: 12px;
   color: @text-basic-color;
+  margin-left: 0;
+  text-align: center;
+  width: 77px;
+  order: 1;
+  transform: translate(-50%);
+  background-color: @example-background-color;
+
+  @media (min-width: @tablet-width) {
+    font-size: 14px;
+    line-height: 14px;
+    top: 64px;
+    width: 130px;
+    background-color: @basic-white;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-color: @example-background-color;
+  }
 }
 
 .example__total {
   font-size: 14px;
   line-height: 20px;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+  }
 }
 
 // .example__range-controls{

@@ -1,8 +1,19 @@
 .page-footer {
+  position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-
+  text-align: center;
   outline: 5px solid rgba(0, 255, 0, 0.3);
   outline-offset: -5px;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 34px;
+    padding-right: 34px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 110px;
+  }
 }

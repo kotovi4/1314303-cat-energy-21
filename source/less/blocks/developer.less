@@ -1,11 +1,19 @@
-// .developer {
+.developer {
+  display: flex;
+  justify-content: space-between;
+  outline: 5px solid rgba(13, 32, 139, 0.3);
+  outline-offset: -5px;
 
-// }
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+  }
+}
 
-// .developer__name {
+.developer__name {
+  padding: 10px;
+  color: @text-basic-color;
+}
 
-// }
-
-// .developer__logo {
-
-// }
+.developer__logo {
+  padding: 10px;
+}
