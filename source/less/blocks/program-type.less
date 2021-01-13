@@ -1,14 +1,38 @@
-// .program-type {
-
-// }
+.program-type {
+  border: 1px solid @program-type-border-color;
+}
 
 .program-type__list {
   list-style: none;
+  margin: 0;
+  padding: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border: none;
+
+  // @media (min-width: @desktop-width) {
+  //   padding: 0;
+  //   margin: 0;
+  // }
 }
 
-// .program-type__item {
+.program-type__item {
+  margin: 12px 0;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  color: @text-basic-color;
 
-// }
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    max-width: 630px;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-width: 568px;
+  }
+}
 
 // .program-type__input {
 
