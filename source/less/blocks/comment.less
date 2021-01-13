@@ -2,15 +2,19 @@
   display: flex;
   flex-direction: column;
   border-top: 2px solid @button-basic-color;
+
+  @media (min-width: @tablet-width) {
+    padding: 67px 65px 70px 67px;
+  }
 }
 
 .comment__label {
   padding-bottom: 20px;
 }
 
-.comment__textarea {
-  max-width: 1220px;
-}
+// .comment__textarea {
+//   // max-width: 1220px;
+// }
 
 .comment__textarea::placeholder {
   font-family: "Oswald", sans-serif;

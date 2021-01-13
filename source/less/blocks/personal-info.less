@@ -1,6 +1,10 @@
 .personal-info {
   border: none;
-  max-width: 630px;
+  // max-width: 630px;
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+  }
 }
 
 .personal-info__item {
@@ -11,6 +15,15 @@
   line-height: 18px;
   font-weight: 400;
   color: @text-basic-color;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-width: 569px;
+  }
 }
 
 .personal-info__label {
