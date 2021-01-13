@@ -9,3 +9,21 @@
   outline: 5px solid rgba(234, 0, 255, 0.3);
   outline-offset: -5px;
 }
+
+.page-title {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+  padding: 0 20px;
+  text-transform: none;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 70px;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 110px;
+  }
+}

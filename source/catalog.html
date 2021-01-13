@@ -2,6 +2,7 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Каталог продукции | Кэт энерджи</title>
     <link href="css/style.css" rel="stylesheet">
   </head>
@@ -255,59 +256,62 @@
 
       <section class="other">
         <h2 class="other__title">Дополнительные товары</h2>
-        <div class="other__goods">
-          <ul class="other__list">
-            <li class="other__item other-product">
-              <a class="other-product__link-text" href="#">Сахарозаменитель</a>
-              <dl class="other-product__block">
-                <div class="other-product__item">
-                  <dt class="other-product__name">1 упаковка (100 г)</dt>
-                  <dd class="other-product__value">200 Р.</dd>
-                </div>
-              </dl>
-              <a class="button" href="#">Заказать</a>
-            </li>
-            <li class="other__item other-product">
-              <a class="other-product__link-text" href="#">питьевая вода</a>
-              <dl class="other-product__block">
-                <div class="other-product__item">
-                  <dt class="other-product__name">5 литров</dt>
-                  <dd class="other-product__value">50 Р.</dd>
-                </div>
-              </dl>
-              <a class="button" href="#">Заказать</a>
-            </li>
-            <li class="other__item other-product">
-              <a class="other-product__link-text" href="#">молоко</a>
-              <dl class="other-product__block">
-                <div class="other-product__item">
-                  <dt class="other-product__name">1 литр</dt>
-                  <dd class="other-product__value">100 Р.</dd>
-              </dl>
-              <a class="button" href="#">Заказать</a>
-            </li>
-            <li class="other__item other-product">
-              <a class="other-product__link-text" href="#">витамины</a>
-              <dl class="other-product__block">
-                <div class="other-product__item">
-                  <dt class="other-product__name">1 упаковка (30 г)</dt>
-                  <dd class="other-product__value">300 Р.</dd>
-                </div>
-              </dl>
-              <a class="button" href="#">Заказать</a>
-            </li>
-          </ul>
-        </div>
-        <div class="other__gift gift">
-          <p class="gift__text">Закажите все и получите чехол для кота в подарок!</p>
+        <div class="other__wrapper">
+          <div class="other__goods">
+            <ul class="other__list">
+              <li class="other__item other-product">
+                <a class="other-product__link-text" href="#">Сахарозаменитель</a>
+                <dl class="other-product__block">
+                  <div class="other-product__item">
+                    <dt class="other-product__name">1 упаковка (100 г)</dt>
+                    <dd class="other-product__value">200 Р.</dd>
+                  </div>
+                </dl>
+                <a class="button" href="#">Заказать</a>
+              </li>
+              <li class="other__item other-product">
+                <a class="other-product__link-text" href="#">питьевая вода</a>
+                <dl class="other-product__block">
+                  <div class="other-product__item">
+                    <dt class="other-product__name">5 литров</dt>
+                    <dd class="other-product__value">50 Р.</dd>
+                  </div>
+                </dl>
+                <a class="button" href="#">Заказать</a>
+              </li>
+              <li class="other__item other-product">
+                <a class="other-product__link-text" href="#">молоко</a>
+                <dl class="other-product__block">
+                  <div class="other-product__item">
+                    <dt class="other-product__name">1 литр</dt>
+                    <dd class="other-product__value">100 Р.</dd>
+                </dl>
+                <a class="button" href="#">Заказать</a>
+              </li>
+              <li class="other__item other-product">
+                <a class="other-product__link-text" href="#">витамины</a>
+                <dl class="other-product__block">
+                  <div class="other-product__item">
+                    <dt class="other-product__name">1 упаковка (30 г)</dt>
+                    <dd class="other-product__value">300 Р.</dd>
+                  </div>
+                </dl>
+                <a class="button" href="#">Заказать</a>
+              </li>
+            </ul>
+          </div>
+          <div class="other__gift gift">
+            <p class="gift__text">Закажите все и получите чехол для кота в подарок!</p>
+          </div>
         </div>
       </section>
 
       <section class="map">
-        <h2 class="map__title">Приглашаем к сотрудничеству дилеров!</h2>
-        <p class="map__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
-        <img src="img/location.png" width="320" height="362" alt="Санкт-Петербург, ул. Большая Конюшенная, д. 19/8">
-      </section>
+        <div class="map__block">
+          <h2 class="map__title">Приглашаем <br> к сотрудничеству дилеров!</h2>
+          <p class="map__text">ул. Большая <br> Конюшенная, д. 19/8 <br> Санкт-Петербург</p>
+        </div>
+        <img class="map__img" src="img/location.png" width="320" height="362" alt="Санкт-Петербург, ул. Большая Конюшенная, д. 19/8">
     </main>
 
     <footer class="page-footer">
@@ -317,23 +321,23 @@
       <ul class="footer-social">
         <li class="footer-social__item">
           <a class="footer-social__button" href="#">
-            <span class="visually-hidden">Вконтакте</span>
+            <span>Вконтакте</span>
           </a>
         </li>
         <li class="footer-social__item">
           <a class="footer-social__button" href="#">
-            <span class="visually-hidden">Instagram</span>
+            <span>Instagram</span>
           </a>
         </li>
         <li class="footer-social__item">
           <a class="footer-social__button" href="#">
-            <span class="visually-hidden">Facebook</span>
+            <span>Facebook</span>
           </a>
         </li>
       </ul>
       <a class="developer" href="https://htmlacademy.ru/intensive/adaptive">
         <p class="developer__name">HTML Academy</p>
-        <img class="developer__logo" src="https://via.placeholder.com/281x34" width="281" height="34" alt="Логотип Академии">
+        <img class="developer__logo" src="https://via.placeholder.com/27x34" width="27" height="34" alt="Логотип Академии">
       </a>
     </footer>
 

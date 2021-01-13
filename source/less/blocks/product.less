@@ -1,6 +1,6 @@
-// .product {
-
-// }
+.product {
+  max-width: 282px;
+}
 
 // .product__link-img {
 
@@ -17,6 +17,18 @@
   color: @product-link-text-color;
 }
 
-// .product__block {
+.product__block {
+  margin: 0;
 
-// }
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    line-height: 16px;
+    padding-top: 20px;
+    margin-bottom: 33px;
+    width: 252px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 168px;
+  }
+}

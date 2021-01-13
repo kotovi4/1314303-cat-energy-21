@@ -3,7 +3,21 @@
 // }
 
 .product-description__item {
+  display: flex;
+  justify-content: space-between;
+  min-width: 142px;
+  font-size: 12px;
+  line-height: 16px;
   color: @text-basic-color;
+
+  @media (min-width: @tablet-width) {
+    justify-content: center;
+    font-size: 16px;
+    line-height: 16px;
+    padding-top: 5px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid @product-border-color;
+  }
 }
 
 // .product-description__name {
