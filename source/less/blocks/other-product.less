@@ -1,6 +1,10 @@
-// .other-product {
+.other-product {
+  border-bottom: 1px solid @product-border-color;
 
-// }
+  &:first-child {
+    border-top: 1px solid @product-border-color;
+  }
+}
 
 .other-product__link-text {
   text-transform: uppercase;
@@ -12,6 +16,8 @@
 // }
 
 .other-product__item {
+  display: flex;
+  justify-content: space-between;
   color: @text-basic-color;
 }
 
