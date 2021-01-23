@@ -2,54 +2,30 @@
   position: relative;
 }
 
-// .map__block {
-//   display: grid;
-//   grid-template-columns: 1fr 1fr;
-//   padding: 19px 28px;
-//   background-color: @basic-white;
-
-//   @media (min-width: @tablet-width) {
-//     padding-right: 71px;
-//     padding-left: 71px;
-//   }
-
-//   @media (min-width: @desktop-width) {
-//     position: absolute;
-//     top: 2350px;
-//     left: 110px;
-//     align-items: center;
-//     width: 570px;
-//     height: 201px;
-//     padding-left: 76px;
-//     padding-right: 79px;
-//   }
-// }
-
 .map__block {
   display: flex;
   justify-content: space-between;
   padding: 0 20px;
-  padding-top: 28px;
-  margin-bottom: 26px;
+  padding-top: 15px;
+  margin-bottom: 16px;
 
   @media (min-width: @tablet-width) {
-    padding: 0 71px;
-    padding-top: 66px;
-    margin-bottom: 55px;
+    padding: 0 68px;
+    padding-top: 53px;
+    margin-bottom: 45px;
   }
 
   @media (min-width: @desktop-width) {
     position: absolute;
     display: flex;
     align-items: center;
-    background-color: @basic-white;
+    background-color: @main-color;
     top: 50%;
     left: 50%;
     transform: translate(-610px, -52%);
-    max-width: 410px;
+    width: 428px;
     height: 201px;
     padding-left: 75px;
-    padding-right: 89px;
     padding-top: 0;
     margin: 0;
   }
@@ -62,11 +38,26 @@
   color: @invitation-title-color;
   text-transform: uppercase;
   max-width: 138px;
+  padding-top: 4px;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 21px;
     max-width: 171px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0;
+    margin: 0;
+  }
+}
+
+.map__container {
+  padding-top: 15px;
+
+  @media (min-width: @desktop-width) {
+    padding-top: 18px;
+    padding-right: 15px;
   }
 }
 
@@ -74,15 +65,19 @@
   font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 20px;
+  font-weight: 400;
   color: @text-basic-color;
-  max-width: 140px;
-  padding-left: 10px;
+  max-width: 149px;
+  padding-right: 3px;
+  margin: 0;
 
   @media (min-width: @tablet-width) {
     font-size: 16px;
     text-align: right;
     max-width: 159px;
     justify-self: end;
+    padding-right: 9px;
+    padding-bottom: 16px;
   }
 
   @media (min-width: @desktop-width) {

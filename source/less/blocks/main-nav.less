@@ -1,19 +1,34 @@
 .main-nav {
   width: 100%;
-  margin-bottom: -13px;
+  height: auto;
   outline: 5px solid rgba(255, 208, 0, 0.3);
   outline-offset: -5px;
+
+  @media (min-width: @tablet-width) {
+    width: 63%;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 39%;
+  }
 }
+
+// .main-nav--closed {
+// }
+
+// .main-nav--open {
+
+// }
 
 .main-nav__list {
   padding: 0;
   margin: 0;
   list-style: none;
 
+
   @media (min-width: @tablet-width) {
     display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
+    justify-content: space-between;
     margin: 0 auto;
   }
 }
@@ -29,8 +44,6 @@
   }
 
   @media (min-width: @tablet-width) {
-    padding-left: 34px;
-    padding-right: 34px;
     border: none;
 
     &:last-child {
@@ -54,7 +67,7 @@
   line-height: 20px;
   font-weight: 500;
   text-transform: uppercase;
-  color: @basic-black;
+  color: @main-text-color;
 
   @media (min-width: @tablet-width) {
     font-weight: 400;

@@ -1,19 +1,33 @@
+
 .developer {
   display: flex;
+  padding: 0 20px;
+  align-items: center;
   justify-content: space-between;
-  outline: 5px solid rgba(13, 32, 139, 0.3);
-  outline-offset: -5px;
 
   @media (min-width: @tablet-width) {
     flex-direction: row;
+    justify-content: center;
   }
 }
 
 .developer__name {
-  padding: 10px;
+  padding-top: 10px;
+  padding-bottom: 15px;
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
   color: @text-basic-color;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+    padding-top: 20px;
+    padding-left: 25px;
+    margin-right: 23px;
+  }
 }
 
-.developer__logo {
-  padding: 10px;
+.developer__icon {
+  padding-top: 20px;
+  padding-bottom: 15px;
 }

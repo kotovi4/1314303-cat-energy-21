@@ -3,18 +3,29 @@
   display: flex;
   flex-direction: column;
   text-align: center;
-  outline: 5px solid rgba(0, 255, 0, 0.3);
-  outline-offset: -5px;
+  min-height: 100%; //test
   background-color: @basic-grey;
 
   @media (min-width: @tablet-width) {
-    flex-direction: row;
-    justify-content: space-between;
-    padding-left: 34px;
-    padding-right: 34px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-top: 18px;
+    padding-bottom: 40px;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 0 110px;
+    padding: 20px 0;
   }
 }
+
+// .page-footer__logo {
+
+// }
+
+// .page-footer__social {
+
+// }
+
+// .page-footer__developer {
+
+// }
