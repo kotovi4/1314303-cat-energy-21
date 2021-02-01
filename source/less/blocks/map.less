@@ -5,40 +5,52 @@
 .map__block {
   display: flex;
   justify-content: space-between;
-  padding: 0 20px;
-  padding-top: 15px;
-  margin-bottom: 16px;
+  padding-top: 14px;
+  padding-bottom: 22px;
 
   @media (min-width: @tablet-width) {
-    padding: 0 68px;
-    padding-top: 53px;
     margin-bottom: 45px;
+    padding: 0 35px;
+    padding-top: 45px;
   }
 
   @media (min-width: @desktop-width) {
     position: absolute;
     display: flex;
     align-items: center;
-    background-color: @main-color;
     top: 50%;
     left: 50%;
     transform: translate(-610px, -52%);
-    width: 428px;
-    height: 201px;
-    padding-left: 75px;
-    padding-top: 0;
     margin: 0;
+    padding-top: 0;
+    padding-left: 75px;
+    width: 460px;
+    height: 201px;
+    background-color: @main-color;
+  }
+}
+
+.map__title-container {
+  padding-top: 15px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 23px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 0;
   }
 }
 
 .map__title {
+  max-width: 138px;
+  margin: 0;
+  padding-bottom: 5px;
   font-size: 16px;
   line-height: 18px;
   font-weight: 400;
   color: @invitation-title-color;
   text-transform: uppercase;
-  max-width: 138px;
-  padding-top: 4px;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
@@ -48,36 +60,39 @@
 
   @media (min-width: @desktop-width) {
     padding: 0;
-    margin: 0;
+    padding-top: 3px;
+    margin-bottom: 1px;
+    line-height: 23px;
   }
 }
 
-.map__container {
+.map__text-container {
   padding-top: 15px;
 
   @media (min-width: @desktop-width) {
-    padding-top: 18px;
-    padding-right: 15px;
+    padding-top: 15px;
+    padding-right: 43px;
   }
 }
 
 .map__text {
+  margin: 0;
+  padding-right: 3px;
+  max-width: 149px;
   font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 20px;
   font-weight: 400;
   color: @text-basic-color;
-  max-width: 149px;
-  padding-right: 3px;
-  margin: 0;
 
   @media (min-width: @tablet-width) {
-    font-size: 16px;
+    justify-self: end;
+    padding-right: 12px;
+    padding-top: 5px;
+    padding-bottom: 14px;
     text-align: right;
     max-width: 159px;
-    justify-self: end;
-    padding-right: 9px;
-    padding-bottom: 16px;
+    font-size: 16px;
   }
 
   @media (min-width: @desktop-width) {
