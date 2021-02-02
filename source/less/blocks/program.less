@@ -1,44 +1,148 @@
-// .program {
-
-// }
+.program {
+  margin: auto;
+}
 
 .program__box {
-  // display: inline-block;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 0 20px;
   list-style: none;
+  margin: 0;
+  margin-top: 23px;
+  padding: 0;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 28px;
+    margin-left: -5px;
+    margin-right: 5px;
+  }
 
   @media (min-width: @desktop-width) {
-    padding: 0 110px;
     display: grid;
     grid-template-columns: 570px 570px;
     grid-template-rows: auto;
     column-gap: 80px;
-    margin-bottom: 71px;
+    margin-top: 12px;
+    margin-bottom: 40px;
+    padding-left: 70px;
   }
 }
 
 .program__item {
-  padding: 20px;
-  margin-bottom: 20px;
+  padding: 25px 20px;
+  margin: 0;
+  margin-bottom: 19px;
   background-color: @basic-grey;
-}
-
-.program__title {
-  font-size: 24px;
-  line-height: 37px;
-  text-transform: uppercase;
 
   @media (min-width: @tablet-width) {
-    font-size: 36px;
-    line-height: 36px;
+    margin-bottom: 27px;
+    padding-top: 68px;
+    padding-left: 52px;
+    height: 280px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 30px;
+    padding-left: 48px;
+    min-height: 242px;
   }
 }
 
-.program__specification {
-  padding-bottom: 23px;
+.program__illustation {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: @accent-color;
+
+  @media (min-width: @tablet-width) {
+    right: 97px;
+    width: 202px;
+    height: 202px;
+    margin-left: auto;
+    margin-top: 5px;
+  }
+
+  @media (min-width: @desktop-width) {
+    position: relative;
+    float: left;
+    top: 0;
+    right: 0;
+    margin-left: 3px;
+    margin-top: -30px;
+    width: 100px;
+    height: 100px;
+  }
+}
+
+.program__icon {
+  position: absolute;
+}
+
+.program__icon--slim {
+  left: 8px;
+  bottom: 3px;
+
+  @media (min-width: @tablet-width) {
+    left: 30px;
+    bottom: 16px;
+    width: 69%;
+    height: 100%;
+  }
+
+  @media (min-width: @desktop-width) {
+    left: 13px;
+    bottom: 7px;
+  }
+}
+
+.program__icon--pro {
+  left: -9px;
+  bottom: 13px;
+
+  @media (min-width: @tablet-width) {
+    left: -35px;
+    bottom: 1px;
+    width: 133%;
+    height: 100%;
+  }
+
+  @media (min-width: @desktop-width) {
+    left: -17px;
+    bottom: 0;
+  }
+}
+
+.program__title {
+  margin-top: 4px;
+  margin-bottom: 12px;
+  padding: 0;
+  padding-left: 71px;
+  font-size: 24px;
+  line-height: 37px;
+  font-weight: 400;
+  text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+    margin-bottom: 3px;
+    padding: 0;
+    padding-top: 7px;
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 0;
+    padding-left: 166px;
+  }
+}
+
+.program__text {
+  width: 100%;
+  padding-bottom: 22px;
+  margin-top: 29px;
+  margin-bottom: 0;
   font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
@@ -46,26 +150,73 @@
   border-bottom: 1px solid @main-border-color;
 
   @media (min-width: @tablet-width) {
-    padding-bottom: 24px;
+    width: 59%;
     font-size: 16px;
     line-height: 24px;
-    color: @basic-black;
+    color: @main-text-color;
     border: none;
+    margin-bottom: 20px;
+    margin-top: 24px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 100%;
+    margin-bottom: 0;
+    padding-top: 51px;
+    padding-left: 5px;
+    padding-bottom: 27px;
+    max-width: 467px;
+  }
+}
+
+.program__text--pro {
+  @media (min-width: @tablet-width) {
+    max-width: 342px;
+    margin-top: 26px;
+    margin-bottom: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 3px;
+    margin-top: 24px;
+    padding-bottom: 24px;
+    max-width: 457px;
   }
 }
 
 .program__button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-top: 19px;
+  padding-right: 100px;
   font-size: 16px;
   line-height: 16px;
-  color: @basic-black;
-  padding-right: 127px;
-  padding-top: 15px;
-  padding-bottom: 18px;
+  color: @main-text-color;
   text-transform: uppercase;
+  // padding-bottom: 20px;
 
   @media (min-width: @tablet-width) {
-    padding-top: 24px;
+    padding-top: 10px;
     font-size: 20px;
     line-height: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 0;
+  }
+}
+
+.program__catalog {
+  margin: 0;
+  padding-right: 10px;
+
+  @media (min-width: @tablet-width) {
+    padding-right: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 4px;
+    padding-right: 25px;
   }
 }

@@ -2,87 +2,97 @@
   position: relative;
 }
 
-// .map__block {
-//   display: grid;
-//   grid-template-columns: 1fr 1fr;
-//   padding: 19px 28px;
-//   background-color: @basic-white;
-
-//   @media (min-width: @tablet-width) {
-//     padding-right: 71px;
-//     padding-left: 71px;
-//   }
-
-//   @media (min-width: @desktop-width) {
-//     position: absolute;
-//     top: 2350px;
-//     left: 110px;
-//     align-items: center;
-//     width: 570px;
-//     height: 201px;
-//     padding-left: 76px;
-//     padding-right: 79px;
-//   }
-// }
-
 .map__block {
   display: flex;
   justify-content: space-between;
-  padding: 0 20px;
-  padding-top: 28px;
-  margin-bottom: 26px;
+  padding-top: 14px;
+  padding-bottom: 22px;
 
   @media (min-width: @tablet-width) {
-    padding: 0 71px;
-    padding-top: 66px;
-    margin-bottom: 55px;
+    margin-bottom: 45px;
+    padding: 0 35px;
+    padding-top: 45px;
   }
 
   @media (min-width: @desktop-width) {
     position: absolute;
     display: flex;
     align-items: center;
-    background-color: @basic-white;
     top: 50%;
     left: 50%;
     transform: translate(-610px, -52%);
-    max-width: 410px;
-    height: 201px;
-    padding-left: 75px;
-    padding-right: 89px;
-    padding-top: 0;
     margin: 0;
+    padding-top: 0;
+    padding-left: 75px;
+    width: 460px;
+    height: 201px;
+    background-color: @main-color;
+  }
+}
+
+.map__title-container {
+  padding-top: 15px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 23px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 0;
   }
 }
 
 .map__title {
+  max-width: 138px;
+  margin: 0;
+  padding-bottom: 5px;
   font-size: 16px;
   line-height: 18px;
   font-weight: 400;
   color: @invitation-title-color;
   text-transform: uppercase;
-  max-width: 138px;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 21px;
     max-width: 171px;
   }
+
+  @media (min-width: @desktop-width) {
+    padding: 0;
+    padding-top: 3px;
+    margin-bottom: 1px;
+    line-height: 23px;
+  }
+}
+
+.map__text-container {
+  padding-top: 15px;
+
+  @media (min-width: @desktop-width) {
+    padding-top: 15px;
+    padding-right: 43px;
+  }
 }
 
 .map__text {
+  margin: 0;
+  padding-right: 3px;
+  max-width: 149px;
   font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 20px;
+  font-weight: 400;
   color: @text-basic-color;
-  max-width: 140px;
-  padding-left: 10px;
 
   @media (min-width: @tablet-width) {
-    font-size: 16px;
+    justify-self: end;
+    padding-right: 12px;
+    padding-top: 5px;
+    padding-bottom: 14px;
     text-align: right;
     max-width: 159px;
-    justify-self: end;
+    font-size: 16px;
   }
 
   @media (min-width: @desktop-width) {
