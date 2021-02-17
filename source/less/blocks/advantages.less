@@ -37,14 +37,12 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin-bottom: 10px;
-    // padding-bottom: 12px;
   }
 
   @media (min-width: @desktop-width) {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    // grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
 
@@ -99,7 +97,7 @@
     background-color: @accent-color;
     background-repeat: no-repeat;
 
-    @media (min-width: @tablet-width)  {
+    @media (min-width: @tablet-width) {
       width: 80px;
       height: 80px;
       margin-bottom: 30px;
@@ -109,25 +107,25 @@
   &--fast::before {
     position: relative;
     background-position: center;
-    background-image: url(../img/fast-icon.svg);
+    background-image: url("../img/fast-icon.svg");
   }
 
   &--healthy::before {
     position: relative;
     background-position: center;
-    background-image: url(../img/healthy-icon.svg);
+    background-image: url("../img/healthy-icon.svg");
   }
 
   &--replacement::before {
     position: relative;
     background-position: center;
-    background-image: url(../img/replacement-icon.svg);
+    background-image: url("../img/replacement-icon.svg");
   }
 
   &--change::before {
     position: relative;
     background-position: center;
-    background-image: url(../img/change-icon.svg);
+    background-image: url("../img/change-icon.svg");
   }
 }
 
