@@ -126,7 +126,7 @@
   position: absolute;
   transform: translate(-50%);
   order: 1;
-  top: 45px;
+  top: 46px;
   left: 49%;
   width: 77px;
   margin-left: 0;
@@ -228,9 +228,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 15px auto 0;
+  margin: 16px auto 0;
   padding-bottom: 35px;
-  width: 219px;
+  width: 220px;
 
   @media (min-width: @tablet-width) {
     width: 580px;
@@ -241,13 +241,15 @@
 }
 
 .example__button {
-  width: 60px;
+  width: 62px;
   font-family: inherit;
   font-size: 16px;
   line-height: 20px;
   border: none;
   text-transform: uppercase;
+  background-color: @example-background-color;
   cursor: pointer;
+
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
@@ -258,6 +260,14 @@
     width: auto;
     background-color: @example-background-color;
     border-bottom: 1px dotted @main-text-color;
+
+    &:hover {
+      border-bottom: 1px solid @main-text-color;
+    }
+
+    &:active {
+      border: none;
+    }
   }
 }
 

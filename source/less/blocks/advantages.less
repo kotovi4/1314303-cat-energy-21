@@ -1,16 +1,17 @@
 .advantages {
   @media (min-width: @tablet-width) {
+    margin-left: -5px;
     border-bottom: 1px solid @main-border-color;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 0 73px;
+    padding: 0 70px;
   }
 }
 
 .advantages__title {
   margin-top: 5px;
-  margin-bottom: 25px;
+  margin-bottom: 37px;
   font-size: 36px;
   line-height: 40px;
   font-weight: 400;
@@ -18,7 +19,6 @@
   @media (min-width: @tablet-width) {
     margin-top: 15px;
     margin-bottom: 32px;
-    margin-left: -4px;
     font-size: 60px;
     line-height: 60px;
   }
@@ -27,135 +27,119 @@
 .advantages__list {
   display: flex;
   flex-direction: column;
+  counter-reset: section;
   margin: 0;
   padding: 0;
-  padding-bottom: 35px;
-  font-family: "Arial", sans-serif;
-  font-size: 14px;
-  line-height: 18px;
-  font-weight: 400;
   list-style: none;
-  color: @text-basic-color;
+  margin-bottom: 23px;
 
   @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding-bottom: 12px;
-    font-size: 14px;
-    line-height: 18px;
-    // border-bottom: 1px solid @main-border-color;
+    margin-bottom: 10px;
   }
 
   @media (min-width: @desktop-width) {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
   }
 }
 
 .advantages__item {
-  padding-left: 80px;
-  margin-bottom: -2px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  max-width: 100%;
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 18px;
 
   @media (min-width: @tablet-width) {
     position: relative;
-    width: 227px;
-    margin-left: -4px;
-    margin-right: 161px;
-    margin-bottom: 75px;
+    display: block;
+    min-height: 230px;
+    margin-bottom: 45px;
+    margin-right: 139px;
     padding: 0;
-    padding-top: 123px;
+    padding-top: 42px;
     font-size: 16px;
     line-height: 24px;
+    letter-spacing: 1.1px;
+    color: @text-basic-color;
 
     &:nth-child(2n) {
-      margin-right: 0;
+      letter-spacing: 1px;
+      margin-left: 0;
+      // margin-right: 87px;
     }
 
     &::after {
       position: absolute;
-      display: inline-block;
-      text-align: center;
-      top: 0;
-      right: -10px;
-      width: 134px;
-      height: 280px;
-      z-index: 1;
+      counter-increment: section;
+      content: counter(section);
+      left: 114px;
+      top: 129px;
+      font-family: "Oswald", "Arial", sans-serif;
       font-size: 280px;
-      line-height: 280px;
       color: @basic-grey;
-    }
-  }
-
-  @media (min-width: @desktop-width) {
-
-    margin-right: 73px;
-    min-width: 230;
-
-    &:nth-child(2n) {
-      margin-left: 25px;
-      margin-right: 102px;
-    }
-
-    &:nth-child(4n) {
-      margin-left: 25px;
-      margin-right: 0;
+      z-index: -1;
     }
   }
 
   &::before {
-    position: absolute;
+    display: block;
+    flex-shrink: 0;
     content: "";
     width: 60px;
     height: 60px;
+    margin-right: 20px;
     background-color: @accent-color;
-    top: 15px;
-    left: 0;
     background-repeat: no-repeat;
-    background-position: center;
 
     @media (min-width: @tablet-width) {
-      top: 43px;
-      left: auto;
       width: 80px;
       height: 80px;
+      margin-bottom: 30px;
     }
   }
 
-  &--fast {
+  &--fast::before {
     position: relative;
-
-    &::before {
-      background-image: url("../img/fast.svg");
-    }
+    background-position: center;
+    background-image: url("../img/fast-icon.svg");
   }
 
-  &--healthy {
+  &--healthy::before {
     position: relative;
-
-    &::before {
-      background-image: url("../img/healthy.svg");
-    }
+    background-position: center;
+    background-image: url("../img/healthy-icon.svg");
   }
 
-  &--replacement {
+  &--replacement::before {
     position: relative;
-
-    &::before {
-      background-image: url("../img/change.svg");
-    }
+    background-position: center;
+    background-image: url("../img/replacement-icon.svg");
   }
 
-  &--change {
+  &--change::before {
     position: relative;
-
-    &::before {
-      background-image: url("../img/replacement.svg");
-    }
+    background-position: center;
+    background-image: url("../img/change-icon.svg");
   }
 }
 
 .advantages__item-text {
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  margin: 0;
+  z-index: 2;
+
   @media (min-width: @tablet-width) {
     width: 245px;
-    margin-top: 30px;
+    line-height: 24px;
   }
 }
