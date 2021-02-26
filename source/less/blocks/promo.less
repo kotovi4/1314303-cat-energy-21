@@ -20,6 +20,7 @@
   }
 
   @media (min-width: @tablet-width) {
+    min-height: 843px;
     background-image: none;
     color: @main-text-color;
 
@@ -28,8 +29,9 @@
     }
   }
 
-  // @media (min-width: @desktop-width) {
-  // }
+  @media (min-width: @desktop-width) {
+    min-height: 658px;
+  }
 }
 
 .promo__wrapper {
@@ -47,14 +49,14 @@
     margin-bottom: 0;
     padding-left: 77px;
     padding-right: 20px;
-    padding-top: 52px;
+    padding-top: 57px;
     height: auto;
   }
 
   @media (min-width: @desktop-width) {
     position: relative;
     padding-left: 150px;
-    padding-top: 108px;
+    padding-top: 118px;
     height: 540px;
   }
 }
@@ -64,13 +66,13 @@
   line-height: 36px;
   font-weight: 400;
   margin: 0;
-  margin-bottom: 9px;
+  margin-bottom: 8px;
   max-width: 249px;
   text-align: center;
 
   @media (min-width: @tablet-width) {
     min-width: 414px;
-    margin-left: 5px;
+    margin-left: 10px;
     margin-bottom: 25px;
     text-align: left;
     font-size: 60px;
@@ -92,7 +94,7 @@
   text-transform: uppercase;
 
   @media (min-width: @tablet-width) {
-    margin-left: 5px;
+    margin-left: 11px;
     margin-bottom: 20px;
     text-align: left;
     font-size: 20px;
@@ -105,27 +107,21 @@
   }
 }
 
-.promo__picture {
-  @media (min-width: @tablet-width) {
-    position: relative;
-    order: 3;
-    bottom: 80px;
-  }
-
-  // @media (min-width: @desktop-width) {
-  // }
-}
-
 .promo__img {
   width: 280px;
   height: 270px;
 
   @media (min-width: @tablet-width) {
+    position: absolute;
+    top: 258px;
+    right: 0;
     width: 709px;
     height: 609px;
   }
 
-  @media (min-width: @tablet-width) {
+  @media (min-width: @desktop-width) {
+    top: 35px;
+    right: 230px;
     width: 552px;
     height: 499px;
   }
@@ -133,12 +129,19 @@
 
 .promo__button {
   line-height: 18px;
+  order: 3;
 
   @media (min-width: @tablet-width) {
     padding-top: 17px;
     padding-bottom: 17px;
+    margin-left: 5px;
     width: 246px;
     font-size: 20px;
     line-height: 20px;
+    z-index: 3;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 0;
   }
 }
