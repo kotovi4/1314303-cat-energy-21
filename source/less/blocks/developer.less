@@ -4,6 +4,10 @@
   justify-content: space-between;
   padding: 0 20px;
 
+  &:active {
+    opacity: 0.3;
+  }
+
   @media (min-width: @tablet-width) {
     flex-direction: row;
     justify-content: center;
@@ -39,16 +43,22 @@
 }
 
 .developer__icon {
+  display: block;
   padding-top: 15px;
   padding-bottom: 15px;
+  fill: @footer-icon-color;
+
+  &:hover {
+    fill: @accent-color;
+  }
 
   @media (min-width: @tablet-width) {
     padding: 0;
-    padding-top: 10px;
+    padding-top: 6px;
     padding-left: 20px;
   }
 
-  // @media (min-width: @desktop-width) {
-
-  // }
+  @media (min-width: @desktop-width) {
+    padding-top: 17px;
+  }
 }
