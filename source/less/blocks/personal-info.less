@@ -1,9 +1,19 @@
 .personal-info {
   border: none;
-  // max-width: 630px;
+  width: 100%;
+  margin: 0;
+  padding-bottom: 8px;
+  padding-left: 1px;
+  border-bottom: 1px solid @program-type-border-color;
 
   @media (min-width: @tablet-width) {
-    padding: 0;
+    border: none;
+    padding-bottom: 51px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 0;
+    margin-right: 36px;
   }
 }
 
@@ -11,12 +21,15 @@
   display: flex;
   justify-content: flex-end;
   text-align: right;
+  align-items: center;
   font-size: 16px;
   line-height: 18px;
   font-weight: 400;
   color: @text-basic-color;
 
   @media (min-width: @tablet-width) {
+    // padding-bottom: 8px;
+    margin: 17px 0 22px;
     font-size: 20px;
     line-height: 30px;
   }
@@ -28,8 +41,20 @@
 
 .personal-info__label {
   padding-right: 14px;
+
+  @media (min-width: @tablet-width) {
+    padding-right: 20px;
+  }
 }
 
 .personal-info__input {
+  padding-top: 10px;
+  padding-bottom: 11px;
+  padding-left: 16px;
+  padding-right: 16px;
   flex: 1;
+
+  @media (min-width: @tablet-width) {
+    padding: 8px 17px;
+  }
 }
