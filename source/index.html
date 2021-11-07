@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Главная страница | Кэт энерджи</title>
     <link href="css/style.css" rel="stylesheet">
+    <link href="leaflet/leaflet.css" rel="stylesheet">
   </head>
 
   <body class="page-body">
@@ -160,9 +161,12 @@
           </div>
         </div>
 
-
         <div class="example__progress">
-          <img class="example__img" src="https://via.placeholder.com/311x232" width="311" height="232" alt="Пример похудения кота">
+          <picture>
+            <source media="(min-width: 660px)" srcset="img/cat-fat-tablet@1x.png, img/cat-fat-tablet@2x.png 2x">
+            <img class="example__img" src="img/cat-fat-mobile@1x.png" srcset="img/cat-fat-mobile@2x.png 2x" alt="Толстый кот">
+          </picture>
+          <!-- <img class="example__img" src="https://via.placeholder.com/311x232" width="311" height="232" alt="Пример похудения кота"> -->
           <div class="example__range-controls">
             <button class="example__button" type="button">Было</button>
             <div class="example__scale">
@@ -189,7 +193,8 @@
             </div>
           </div>
         </div>
-        <img class="map__img" src="img/location.png" width="320" height="362" alt="Санкт-Петербург, ул. Большая Конюшенная, д. 19/8">
+        <div id="map" style="width: 100%;"></div>
+        <!-- <img class="map__img" src="img/location.png" width="320" height="362" alt="Санкт-Петербург, ул. Большая Конюшенная, д. 19/8"> -->
       </section>
     </main>
 
@@ -236,6 +241,7 @@
         </a>
       </div>
     </footer>
-
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
